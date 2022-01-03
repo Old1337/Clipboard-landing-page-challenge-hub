@@ -1,0 +1,50 @@
+header {
+  background: {
+    image: url(/assests/images/bg-header-desktop.png);
+    repeat: no-repeat;
+    size: 100%;
+  }
+
+  .container {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    h1 {
+      color: $darkGrayishBlue;
+      font: {
+        size: 40px;
+      }
+    }
+    p {
+      color: $GrayishBlue;
+      font: {
+        size: 21px;
+      }
+    }
+  }
+}
+.links {
+  display: flex;
+  justify-content: center;
+  @include media;
+  & a:first-child,
+  a:last-child {
+    color: white;
+    margin-right: 10px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  & a:first-child {
+    background-color: $StrongCyan;
+    @include box-shadow($StrongCyan);
+    border-bottom: 3px solid #3baf9e;
+  }
+  & a:last-child {
+    background-color: $lightBlue;
+    @include box-shadow($lightBlue);
+    border-bottom: 3px solid #5a6be9;
+  }
+}

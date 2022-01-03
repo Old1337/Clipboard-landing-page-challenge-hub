@@ -1,0 +1,38 @@
+footer {
+  padding: 30px 0px;
+  margin-top: 100px;
+  background-color: #eeeeee7d;
+  .img {
+    img {
+      width: 80px;
+    }
+  }
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    @include media;
+  }
+  .link {
+    display: flex;
+    text-align: center;
+
+    @include media;
+    a {
+      margin: 10px;
+      color: $darkGrayishBlue;
+      &:hover {
+        color: $StrongCyan;
+      }
+    }
+  }
+  .icons {
+    img {
+      margin-right: 20px;
+      cursor: pointer;
+    }
+  }
+  img:hover {
+    color: $StrongCyan;
+  }
+}

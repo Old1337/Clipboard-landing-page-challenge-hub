@@ -1,0 +1,40 @@
+// $variables
+
+$StrongCyan: hsl(171, 66%, 44%);
+
+$lightBlue: hsl(233, 100%, 69%);
+
+$darkGrayishBlue: hsl(210, 10%, 33%);
+
+$GrayishBlue: hsl(201, 11%, 66%);
+
+// Reset Things
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+// mixing
+
+@mixin box-shadow($color) {
+  box-shadow: 0px 5px 15px $color;
+}
+
+@mixin media {
+  @media (max-width: 767px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@mixin secMedia {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
